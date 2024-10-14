@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace _20._14._24_Interface.Models
 {
-    interface OperateVehicle
+    interface OperateVehicle //to implement the method how the vehicule operate
     {
         void Operate();//Interface method doestnt have a body
 
     }
 
-    interface accesibleTransport
+    interface accesibleTransport//To decide if is public accesible vehicule or no
     {
         Boolean isPublicAccesible(); 
     }
 
+    // Interfaces that inherit from OperateVehicle to define different types of vehicles that can operate.
     interface Flyiable : OperateVehicle
     {
         void Fly();
